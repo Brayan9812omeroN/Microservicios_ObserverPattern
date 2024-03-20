@@ -11,6 +11,6 @@ public class inventory implements IObserver {
 	
 	@Override
 	public void update(String message) {
-		System.out.println(this.name + " Se vendio: " + message);
+		System.out.println(this.name + ", -1 unidad: " + message);
 	}
 }

@@ -3,8 +3,6 @@ import Payment.payment;
 import ShoppingCart.shoppingcart;
 import Inventory.inventory;
 
-import Payment.payment;
-
 public class Main {
 
 	public static void main(String[] args) {
@@ -19,8 +17,6 @@ public class Main {
 		notifier.attach(purchase_carrito);
 		
 		notifier.notify("Compra exitosa");
-		
-		//notifier.detachh(subscriberOne);
 		
 	}
 
