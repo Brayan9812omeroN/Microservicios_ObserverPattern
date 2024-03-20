@@ -6,20 +6,20 @@ import java.util.List;
 import Interfaces.IObserver;
 
 public class payment {
-	private List<IObserver> subscribers = new ArrayList<>();
+	private List<IObserver> purchase = new ArrayList<>();
 	
 	
-	public void attach(IObserver subscriber) {
-		this.subscribers.add(subscriber);
+	public void attach(IObserver purchase) {
+		this.purchase.add(purchase);
 	}
 	
-	public void detachh(IObserver subscriber) {
-		this.subscribers.remove(subscriber);
+	public void detachh(IObserver purchase) {
+		this.purchase.remove(purchase);
 	}
 	
 	public void notify(String message) {
-		for(IObserver subscriber : this.subscribers) {
-			subscriber.update(message);
+		for(IObserver purchase : this.purchase) {
+			purchase.update(message);
 		}
 	}
 }

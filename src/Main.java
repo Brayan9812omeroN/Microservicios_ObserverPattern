@@ -10,15 +10,17 @@ public class Main {
 	public static void main(String[] args) {
 		payment notifier = new payment();
 		
-		users subscriberOne = new users("Nicolas");
-		users subscriberTwo = new users("Juan");
+		users purchase_user = new users("Camilo");
+		inventory purchase_product = new inventory("Mouse");
+		shoppingcart purchase_carrito = new shoppingcart("Mouse");
 		
-		notifier.attach(subscriberOne);
-		notifier.attach(subscriberTwo);
+		notifier.attach(purchase_user);
+		notifier.attach(purchase_product);
+		notifier.attach(purchase_carrito);
 		
 		notifier.notify("Compra exitosa");
 		
-		notifier.detachh(subscriberOne);
+		//notifier.detachh(subscriberOne);
 		
 	}
 
